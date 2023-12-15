@@ -9,7 +9,7 @@ String buffer;
 
 void device_app_init(){
     ibme_app.device_id = DEVICE_ID;
-    ibme_app.patient_data.patient_id = 0;
+    ibme_app.patient_data.patient_id = "0";
     ibme_app.patient_data.name = "N.H.Hai";
     ibme_app.patient_data.age = 30;
     ibme_app.patient_data.bed_id = 10;

@@ -1,11 +1,13 @@
 #include <Arduino.h>
-#include <ESP8266WiFi.h>
+// #include <ESP8266WiFi.h>
 #include <MQTT.h>
 #include "mqtt_app.h"
 #include "LiquidCrystal_I2C.h"
 #include "app_config.h"
 #include "display_app.h"
 #include "device_app.h"
+#include <SPI.h>
+#include <WiFi.h>
 
 const char ssid[] = WIFI_SSID_CONFIG;
 const char pass[] = WIFI_PASSWORD_CONFIG;

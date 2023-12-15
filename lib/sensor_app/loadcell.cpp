@@ -23,7 +23,7 @@ void loadcell_tare(){
 }
 
 void loadcell_calib(){
-    loadcell.set_scale(437); 
+    loadcell.set_scale(-437); 
 }
 
 int loadcell_get_mass(){

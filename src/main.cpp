@@ -30,11 +30,12 @@ void loop() {
   display_clear_rect(0,0,15,0);
   display_text(0,0,ibme_app.patient_data.name);
   display_clear_rect(0,1,15,1);
-  ibme_app.volume = loadcell_get_mass();
+    ibme_app.volume = loadcell_get_mass();
   display_num(0,1,ibme_app.volume);
- 
+  
   if (millis() - myTime > 5000){
   mqtt_app_client_publish(&ibme_app);
   myTime = millis();
   }
+  delay(200);
 }
